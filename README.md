@@ -1,6 +1,8 @@
 # Criando de um Jogo do sudoku em java
 
+<center>
 ![Imagem do Sudoku](image.png)
+<\center>
 
 ## Regras básicas
 
