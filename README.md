@@ -1,8 +1,9 @@
 # Criando de um Jogo do sudoku em java
 
-||
-|:---:|  
-|![Imagem do Sudoku](image.png)|
+<div style="text-align: center;">
+    |![Imagem do Sudoku](image.png)|
+</div>
+
 
 
 ## Regras básicas
