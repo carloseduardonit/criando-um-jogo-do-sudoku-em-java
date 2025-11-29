@@ -1,9 +1,11 @@
 # Criando de um Jogo do sudoku em java
 
+![GIT](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+
 ||
 |:---:|  
 |![Imagem do Sudoku](image.png)|
-
 
 ## Regras básicas
 
