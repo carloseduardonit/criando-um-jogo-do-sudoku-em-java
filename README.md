@@ -29,3 +29,31 @@
 - [ ] Criar a Inserção do valores dos quadros menores
   - [ ] Verificar se o numero não consta nas colunas e nas linhas
 
+## Validação de Entrada do Número
+
+- Validar se o valor informado está entre **0 e 10**
+  - Exibir mensagem caso o número seja **maior que 9**
+  - Exibir mensagem caso o número seja **menor que 1**
+
+---
+
+## ✅ Inserção do Valor no Quadro Maior
+
+- Inserir valor no quadro maior
+  - Validar se o valor da **coluna** está entre 0 e 10
+    - Verificar se o número **não existe na coluna**
+  - Validar se o valor da **linha** está entre 0 e 10
+    - Verificar se o número **não existe na linha**
+  - Verificar se o número não viola outras regras (ex: duplicidade geral, caso necessário)
+  - Confirmar inserção após passar por todas as validações
+
+---
+
+## ✅ Inserção dos Valores nos Quadros Menores
+
+- Inserir valor nos quadros menores
+  - Verificar se o número **não consta nas colunas**
+  - Verificar se o número **não consta nas linhas**
+  - Verificar se o número **não existe no quadro menor**
+  - Criar mensagens específicas para cada tipo de violação
+  - Criar função de validação única para evitar código duplicado
