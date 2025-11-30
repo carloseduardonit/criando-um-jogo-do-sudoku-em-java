@@ -2,10 +2,27 @@
 
 ![GIT](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-
 ||
 |:---:|  
 |![Imagem do Sudoku](image.png)|
+
+## Sobre
+
+Um jogo clássico de Sudoku, desenvolvido do zero em Java, usando lógica orientada a objetos.  
+Ideal para quem quer estudar lógica, estruturas de dados e POO — ou para servir como portfólio.
+
+## 📌 Visão Geral
+
+Este projeto implementa um jogo de Sudoku com geração de tabuleiros, validações inteligentes e regras tradicionais (linha, coluna e bloco 3×3). O objetivo é permitir jogar Sudoku no console (ou interface, se expandir), garantindo consistência das regras e integridade dos dados.
+
+## ✅ Funcionalidades Principais
+
+- Geração automática de tabuleiro de Sudoku.  
+- Validações de inserção de números:  
+  - Verifica se o valor informado está entre 1 e 9.  
+  - Garante que o número não está repetido na linha, coluna ou bloco.  
+- Possibilidade de expansão: ainda permite implementação de interface gráfica, persistência, entre outros.  
+- Código escrito em Java com boa organização orientada a objetos — ideal para estudos e adaptações.
 
 ## Regras básicas
 
