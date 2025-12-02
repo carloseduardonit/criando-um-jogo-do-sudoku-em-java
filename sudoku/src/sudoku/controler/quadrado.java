@@ -176,4 +176,7 @@ public class Quadrado {
         return anterior;
     }
 
+    public void valorEstaContido(short coluna, short linha, short valor) {
+        JOptionPane.showMessageDialog(null, "Valor "+valor+" já existe na coluna "+coluna +" da linha "+linha);
+    }
 }

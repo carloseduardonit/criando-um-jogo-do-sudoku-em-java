@@ -1,5 +1,7 @@
 package sudoku.controler;
 
+import javax.swing.JOptionPane;
+
 public class MAIOR extends Quadrado{
     public static final short LINHAS = 9;
     public static final short COLUNAS = 9;
@@ -47,6 +49,24 @@ public class MAIOR extends Quadrado{
             System.out.println();
         }
     }
-
+     
+    public boolean verificaValorLinha(short linha, short valor){
+        for(short coluna=0; coluna<COLUNAS; coluna++){
+            if(tabela[linha][coluna] == valor){
+                valorEstaContido(coluna, linha, valor);
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean verificaValorColuna(short coluna, short valor){
+        for(short linha=0; linha<LINHAS; linha++){
+            if(tabela[linha][coluna] == valor){
+                valorEstaContido(coluna, linha, valor);
+                return true;
+            }
+        }
+        return false;
+    }
    
 }

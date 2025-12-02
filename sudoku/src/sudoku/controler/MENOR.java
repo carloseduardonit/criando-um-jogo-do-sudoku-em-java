@@ -64,6 +64,17 @@ public class MENOR extends Quadrado {
     public void setValor(short linha, short coluna, short valor) {
         tabela[linha][coluna] = valor;
     }
-
+    
+    public boolean  verificaValorTabela(short valor){
+        for(short linha=0; linha<LINHAS; linha++){
+            for(short coluna=0; coluna<COLUNAS; coluna++){
+                if(tabela[linha][coluna] == valor){
+                    valorEstaContido(coluna, linha, valor);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
 }
