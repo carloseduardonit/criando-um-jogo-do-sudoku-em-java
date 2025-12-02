@@ -12,9 +12,17 @@ public class Quadrado {
     public static void main(String[] args) {
         Quadrado quadrado[] = setQuadrado();
         imprimeTabela(quadrado);
-        ((MAIOR) quadrado[0]).setValor((short) 0, (short) 0, (short) 5);
-        ((MENOR) quadrado[1]).setValor((short) 0, (short) 0, (short) 3);
-        imprimeTabela(quadrado);
+        MAIOR maior = (MAIOR) quadrado[0];
+        maior.setValor((short) 0, (short) 0, (short) 5);
+        ((MENOR) quadrado[1]).setValor((short) 0, (short) 0, (short) 5);
+        boolean boolelinhamaior = maior.verificaValorLinha((short)0, (short)5);
+        boolean boolecolunamaior = maior.verificaValorColuna((short)0, (short)5);
+        boolean boolemenor = ((MENOR) quadrado[1]).verificaValorTabela((short)5);
+        System.out.println("Valor 5 na linha 0 do MAIOR: "+ boolelinhamaior);
+        System.out.println("Valor 5 na coluna 0 do MAIOR: "+ boolecolunamaior);
+        System.out.println("Valor 5 no MENOR: "+ boolemenor);
+        
+
     }
 
     /**
@@ -175,6 +183,18 @@ public class Quadrado {
         }
         return anterior;
     }
+/**
+ * Exibe uma mensagem informando que o valor já está presente
+ * na posição especificada da tabela (linha e coluna).
+ *
+ * <p>Este método é usado quando uma tentativa de inserção
+ * viola as regras do Sudoku, indicando duplicidade
+ * na linha ou coluna.</p>
+ *
+ * @param coluna a coluna onde o valor já existe
+ * @param linha a linha onde o valor já existe
+ * @param valor o valor duplicado
+ */
 
     public void valorEstaContido(short coluna, short linha, short valor) {
         JOptionPane.showMessageDialog(null, "Valor "+valor+" já existe na coluna "+coluna +" da linha "+linha);
