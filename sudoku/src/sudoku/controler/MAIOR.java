@@ -1,7 +1,5 @@
 package sudoku.controler;
 
-import javax.swing.JOptionPane;
-
 public class MAIOR extends Quadrado {
     public static final short LINHAS = 9;
     public static final short COLUNAS = 9;
