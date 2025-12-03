@@ -3,7 +3,7 @@ package sudoku.controler;
 public class MENOR extends Quadrado {
     public static final short LINHAS = 3;
     public static final short COLUNAS = 3;
-    short[][] tabela = new short[LINHAS][COLUNAS];
+
 
     /**
      * Construtor do bloco MENOR.
@@ -14,6 +14,8 @@ public class MENOR extends Quadrado {
      * </p>
      */
     public MENOR() {
+        super();
+        tabela = new short[LINHAS][COLUNAS];
         for (short i = 0; i < LINHAS; i++) {
             for (short j = 0; j < COLUNAS; j++) {
                 tabela[i][j] = -1;
@@ -59,6 +61,7 @@ public class MENOR extends Quadrado {
      * @param coluna a coluna da célula (0 a 2)
      * @return o valor da célula ou 0 caso esteja vazia
      */
+    @Override
     public short getValor(short linha, short coluna) {
         return tabela[linha][coluna] >= 0 ? tabela[linha][coluna] : 0;
     }
@@ -104,5 +107,4 @@ public class MENOR extends Quadrado {
         }
         return false;
     }
-
 }

@@ -3,7 +3,6 @@ package sudoku.controler;
 public class MAIOR extends Quadrado {
     public static final short LINHAS = 9;
     public static final short COLUNAS = 9;
-    short[][] tabela;
 
     /**
      * Constrói o tabuleiro MAIOR do Sudoku (9x9).
